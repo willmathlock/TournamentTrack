@@ -1,7 +1,4 @@
 --create database Tournaments;
-
---create table Tournaments();
-
 --DROP SCHEMA public CASCADE;
 --CREATE SCHEMA public;
 
@@ -33,8 +30,6 @@ CREATE TABLE IF NOT EXISTS public."dbo.Tournaments"
 	CONSTRAINT "dbo.Tournaments_pkey" PRIMARY KEY (id)
 );
 
-
-
 CREATE TABLE IF NOT EXISTS public."dbo.TournamentPrizes"
 (
     id SERIAL NOT NULL,
@@ -50,7 +45,6 @@ CREATE TABLE IF NOT EXISTS public."dbo.TournamentPrizes"
 		ON UPDATE NO ACTION
 		ON DELETE NO ACTION
 );
-
 
 CREATE TABLE IF NOT EXISTS public."dbo.Teams"
 (
@@ -74,7 +68,6 @@ CREATE TABLE IF NOT EXISTS public."dbo.TeamMembers"
 		ON UPDATE NO ACTION
 		ON DELETE NO ACTION	
 );
-
 
 CREATE TABLE IF NOT EXISTS public."dbo.TournamentEntries"
 (
@@ -104,7 +97,7 @@ CREATE TABLE IF NOT EXISTS public."dbo.Matchups"
 		ON DELETE NO ACTION
 );
 
-/*CREATE TABLE IF NOT EXISTS public."dbo.MatchupEntries"
+CREATE TABLE IF NOT EXISTS public."dbo.MatchupEntries"
 (
 	id SERIAL NOT NULL,
 	"MatchupId" integer NOT NULL,
@@ -121,4 +114,3 @@ CREATE TABLE IF NOT EXISTS public."dbo.Matchups"
 		ON UPDATE NO ACTION
 		ON DELETE NO ACTION,
 );
-*/
