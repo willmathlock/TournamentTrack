@@ -144,6 +144,7 @@ namespace TrackerUI
             // 
             // createPrizeButton
             // 
+            this.createPrizeButton.BackColor = System.Drawing.Color.White;
             this.createPrizeButton.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
             this.createPrizeButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
             this.createPrizeButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
@@ -155,7 +156,7 @@ namespace TrackerUI
             this.createPrizeButton.Size = new System.Drawing.Size(170, 40);
             this.createPrizeButton.TabIndex = 17;
             this.createPrizeButton.Text = "Create Prize";
-            this.createPrizeButton.UseVisualStyleBackColor = true;
+            this.createPrizeButton.UseVisualStyleBackColor = false;
             // 
             // tournamentPlayersListBox
             // 
