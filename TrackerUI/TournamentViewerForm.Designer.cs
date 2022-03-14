@@ -38,8 +38,8 @@ namespace TrackerUI
             this.matchupListBox = new System.Windows.Forms.ListBox();
             this.teamOneName = new System.Windows.Forms.Label();
             this.teamOneScoreLabel = new System.Windows.Forms.Label();
-            this.teamOneScoreText = new System.Windows.Forms.TextBox();
-            this.teamTwoScoreText = new System.Windows.Forms.TextBox();
+            this.teamOneScoreValue = new System.Windows.Forms.TextBox();
+            this.teamTwoScoreValue = new System.Windows.Forms.TextBox();
             this.teamTwoScoreLabel = new System.Windows.Forms.Label();
             this.teamTwoName = new System.Windows.Forms.Label();
             this.versusLabel = new System.Windows.Forms.Label();
@@ -135,21 +135,21 @@ namespace TrackerUI
             this.teamOneScoreLabel.TabIndex = 7;
             this.teamOneScoreLabel.Text = "Score";
             // 
-            // teamOneScoreText
+            // teamOneScoreValue
             // 
-            this.teamOneScoreText.Location = new System.Drawing.Point(468, 224);
-            this.teamOneScoreText.Name = "teamOneScoreText";
-            this.teamOneScoreText.Size = new System.Drawing.Size(100, 35);
-            this.teamOneScoreText.TabIndex = 8;
-            this.teamOneScoreText.TextChanged += new System.EventHandler(this.teamOneScoreValue_TextChanged);
+            this.teamOneScoreValue.Location = new System.Drawing.Point(468, 224);
+            this.teamOneScoreValue.Name = "teamOneScoreValue";
+            this.teamOneScoreValue.Size = new System.Drawing.Size(100, 35);
+            this.teamOneScoreValue.TabIndex = 8;
+            this.teamOneScoreValue.TextChanged += new System.EventHandler(this.teamOneScoreValue_TextChanged);
             // 
-            // teamTwoScoreText
+            // teamTwoScoreValue
             // 
-            this.teamTwoScoreText.Location = new System.Drawing.Point(468, 364);
-            this.teamTwoScoreText.Name = "teamTwoScoreText";
-            this.teamTwoScoreText.Size = new System.Drawing.Size(100, 35);
-            this.teamTwoScoreText.TabIndex = 11;
-            this.teamTwoScoreText.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.teamTwoScoreValue.Location = new System.Drawing.Point(468, 364);
+            this.teamTwoScoreValue.Name = "teamTwoScoreValue";
+            this.teamTwoScoreValue.Size = new System.Drawing.Size(100, 35);
+            this.teamTwoScoreValue.TabIndex = 11;
+            this.teamTwoScoreValue.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // teamTwoScoreLabel
             // 
@@ -200,19 +200,20 @@ namespace TrackerUI
             this.scoreButton.TabIndex = 13;
             this.scoreButton.Text = "Score";
             this.scoreButton.UseVisualStyleBackColor = true;
+            this.scoreButton.Click += new System.EventHandler(this.scoreButton_Click);
             // 
             // TournamentViewerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(772, 484);
+            this.ClientSize = new System.Drawing.Size(784, 561);
             this.Controls.Add(this.scoreButton);
             this.Controls.Add(this.versusLabel);
-            this.Controls.Add(this.teamTwoScoreText);
+            this.Controls.Add(this.teamTwoScoreValue);
             this.Controls.Add(this.teamTwoScoreLabel);
             this.Controls.Add(this.teamTwoName);
-            this.Controls.Add(this.teamOneScoreText);
+            this.Controls.Add(this.teamOneScoreValue);
             this.Controls.Add(this.teamOneScoreLabel);
             this.Controls.Add(this.teamOneName);
             this.Controls.Add(this.matchupListBox);
@@ -242,8 +243,8 @@ namespace TrackerUI
         private System.Windows.Forms.ListBox matchupListBox;
         private System.Windows.Forms.Label teamOneName;
         private System.Windows.Forms.Label teamOneScoreLabel;
-        private System.Windows.Forms.TextBox teamOneScoreText;
-        private System.Windows.Forms.TextBox teamTwoScoreText;
+        private System.Windows.Forms.TextBox teamOneScoreValue;
+        private System.Windows.Forms.TextBox teamTwoScoreValue;
         private System.Windows.Forms.Label teamTwoScoreLabel;
         private System.Windows.Forms.Label teamTwoName;
         private System.Windows.Forms.Label versusLabel;

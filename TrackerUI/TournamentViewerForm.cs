@@ -56,5 +56,10 @@ namespace TrackerUI
         {
 
         }
+
+        private void scoreButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
