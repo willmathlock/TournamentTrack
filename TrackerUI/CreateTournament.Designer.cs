@@ -36,7 +36,7 @@ namespace TrackerUI
             this.entryFeeValue = new System.Windows.Forms.TextBox();
             this.entryFeeLabel = new System.Windows.Forms.Label();
             this.selectTeamLabel = new System.Windows.Forms.Label();
-            this.selectTeamValue = new System.Windows.Forms.ComboBox();
+            this.selectTeamDropdown = new System.Windows.Forms.ComboBox();
             this.createNewTeamLink = new System.Windows.Forms.LinkLabel();
             this.addTeamButton = new System.Windows.Forms.Button();
             this.createPrizeButton = new System.Windows.Forms.Button();
@@ -109,13 +109,13 @@ namespace TrackerUI
             this.selectTeamLabel.TabIndex = 13;
             this.selectTeamLabel.Text = "Select Team";
             // 
-            // selectTeamValue
+            // selectTeamDropdown
             // 
-            this.selectTeamValue.FormattingEnabled = true;
-            this.selectTeamValue.Location = new System.Drawing.Point(35, 309);
-            this.selectTeamValue.Name = "selectTeamValue";
-            this.selectTeamValue.Size = new System.Drawing.Size(300, 21);
-            this.selectTeamValue.TabIndex = 14;
+            this.selectTeamDropdown.FormattingEnabled = true;
+            this.selectTeamDropdown.Location = new System.Drawing.Point(35, 309);
+            this.selectTeamDropdown.Name = "selectTeamDropdown";
+            this.selectTeamDropdown.Size = new System.Drawing.Size(300, 21);
+            this.selectTeamDropdown.TabIndex = 14;
             // 
             // createNewTeamLink
             // 
@@ -257,7 +257,7 @@ namespace TrackerUI
             this.Controls.Add(this.createPrizeButton);
             this.Controls.Add(this.addTeamButton);
             this.Controls.Add(this.createNewTeamLink);
-            this.Controls.Add(this.selectTeamValue);
+            this.Controls.Add(this.selectTeamDropdown);
             this.Controls.Add(this.selectTeamLabel);
             this.Controls.Add(this.entryFeeValue);
             this.Controls.Add(this.entryFeeLabel);
@@ -281,7 +281,7 @@ namespace TrackerUI
         private System.Windows.Forms.TextBox entryFeeValue;
         private System.Windows.Forms.Label entryFeeLabel;
         private System.Windows.Forms.Label selectTeamLabel;
-        private System.Windows.Forms.ComboBox selectTeamValue;
+        private System.Windows.Forms.ComboBox selectTeamDropdown;
         private System.Windows.Forms.LinkLabel createNewTeamLink;
         private System.Windows.Forms.Button addTeamButton;
         private System.Windows.Forms.Button createPrizeButton;
