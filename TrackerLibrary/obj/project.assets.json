@@ -186,11 +186,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\willi\\Source\\Repos\\TournamentTrack\\TrackerLibrary\\TrackerLibrary.csproj",
+      "projectUniqueName": "C:\\Users\\willi\\Source\\Repos\\GitHub\\TournamentTrack\\TrackerLibrary\\TrackerLibrary.csproj",
       "projectName": "TrackerLibrary",
-      "projectPath": "C:\\Users\\willi\\Source\\Repos\\TournamentTrack\\TrackerLibrary\\TrackerLibrary.csproj",
+      "projectPath": "C:\\Users\\willi\\Source\\Repos\\GitHub\\TournamentTrack\\TrackerLibrary\\TrackerLibrary.csproj",
       "packagesPath": "C:\\Users\\willi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\willi\\Source\\Repos\\TournamentTrack\\TrackerLibrary\\obj\\",
+      "outputPath": "C:\\Users\\willi\\Source\\Repos\\GitHub\\TournamentTrack\\TrackerLibrary\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
